@@ -1,0 +1,14 @@
+{
+  "KR": {
+    "kr.icn_": "icn", "kr.koreanair_": "koreanair", "kr.asiana_": "asiana",
+    "kr.jinair_": "jinair", "kr.trinity_": "trinity", "kr.press_": "molit",
+    "law.항공보안법 시행령.": "asa_decree", "law.항공보안법 시행규칙.": "asa_rules",
+    "law.항공보안법.": "asa", "law.항공기 내 반입금지 위해물품.": "prohibited_items",
+    "law.액체·분무·겔류 등 항공기내 휴대 반입 금지물질 운영기준.": "lags",
+    "law.항공위험물운송기술기준.": "dangerous_goods"
+  },
+  "CN": {"cn.cs.": "csair", "cn.ce.": "ceair", "cn.gov.0001": "beijing_gov", "cn.gov.0002": "shanghai_gov"},
+  "JP": {"jp.mlit.": "mlit", "jp.ana.": "ana", "jp.peach.": "peach", "jp.jal.": "jal", "jp.jnto.": "jnto"},
+  "UK": {"uk.asa1982.": "asa1982", "uk.caa.": "caa", "uk.gov.hand.": "govuk"},
+  "US": {"us.tsa_": "tsa", "us.faa_": "faa", "us.delta_": "delta", "us.united_": "united", "us.aa_": "aa"}
+}

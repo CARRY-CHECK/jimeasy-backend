@@ -1,0 +1,50 @@
+{
+  "root": "..",
+  "paths": {
+    "data": "data",
+    "prompts": "prompts",
+    "env_file": ".env",
+    "results": "outputs/results",
+    "chroma": "data/chroma"
+  },
+  "chroma_collection": "baggage_rules_bge_m3",
+  "timezone": "Asia/Seoul",
+  "default_k": 8,
+  "retrieval": {
+    "method": "hybrid",
+    "candidate_k": 50,
+    "rerank_pool": 30,
+    "airline_filter": true,
+    "warmup": true,
+    "reranker": {
+      "model": "BAAI/bge-reranker-v2-m3",
+      "device": "auto",
+      "dtype": "fp32",
+      "max_length": 512,
+      "batch_size": 16
+    }
+  },
+  "parse_system_prompt": "parse_system_en_ver2.txt",
+  "agent_system_prompt": "chat/agent_system_ver2.txt",
+  "present_system_prompt": "chat/present_system_ver2.txt",
+  "judge_system_prompt": "system.txt",
+  "filter_fields": [
+    "country",
+    "source_name",
+    "source_type",
+    "version",
+    "effective_date",
+    "unit"
+  ],
+  "override_keys": [
+    "departure",
+    "arrival",
+    "departure_airline",
+    "arrival_airline",
+    "travel_date",
+    "baggage_type"
+  ],
+  "chunk_sources": {
+    "SAMPLE": "data/sample/chunks.jsonl"
+  }
+}

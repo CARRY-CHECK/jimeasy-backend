@@ -1,0 +1,109 @@
+{
+  "1_기본_질문": [
+    {
+      "id": "s-1",
+      "question": "인천에서 도쿄로 가는 국제선인데 샴푸랑 선크림을 기내에 가져가도 되나요?",
+      "answer": {
+        "items": [
+          {
+            "name": "샴푸",
+            "details": null,
+            "carry_on": "조건부 가능",
+            "checked_baggage": "가능",
+            "notes": "국제선 기내에는 용기당 100ml 이하만 1L 투명 지퍼백 1개에 담아 반입할 수 있습니다. 위탁 수하물로는 보낼 수 있습니다.",
+            "source": [
+              "kr.sample_authority.0001#0",
+              "jp.sample_authority.0001#1"
+            ]
+          },
+          {
+            "name": "선크림",
+            "details": null,
+            "carry_on": "조건부 가능",
+            "checked_baggage": "가능",
+            "notes": "국제선 기내에는 용기당 100ml 이하만 1L 투명 지퍼백 1개에 담아 반입할 수 있습니다. 위탁 수하물로는 보낼 수 있습니다.",
+            "source": [
+              "kr.sample_authority.0001#0",
+              "jp.sample_authority.0001#1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "s-2",
+      "question": "74Wh 보조배터리 2개를 위탁 수하물에 넣어도 되나요?",
+      "answer": {
+        "items": [
+          {
+            "name": "보조배터리",
+            "details": "74Wh 2개",
+            "carry_on": "조건부 가능",
+            "checked_baggage": "불가",
+            "notes": "보조배터리는 위탁 수하물로 보낼 수 없고 기내에 휴대해야 합니다. 100Wh 이하는 승인 없이 휴대할 수 있으며 단자를 절연해야 합니다.",
+            "source": [
+              "kr.sample_dg.0001#0"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "2_조건별_질문": [
+    {
+      "id": "s-3",
+      "question": "가위 날 길이가 5cm인데 기내에 들고 타도 돼요?",
+      "answer": {
+        "items": [
+          {
+            "name": "가위",
+            "details": "날 길이 5cm",
+            "carry_on": "가능",
+            "checked_baggage": "가능",
+            "notes": "날 길이 6cm 이하 가위는 기내 반입이 가능합니다.",
+            "source": [
+              "kr.sample_authority.0001#1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "s-4",
+      "question": "한국에서 일본 가는데 라이터랑 캠핑용 부탄가스를 위탁으로 보내도 되나요?",
+      "answer": {
+        "items": [
+          {
+            "name": "라이터",
+            "details": null,
+            "carry_on": "조건부 가능",
+            "checked_baggage": "불가",
+            "notes": "라이터는 1인당 1개까지 몸에 지니거나 기내 수하물로만 운반할 수 있고 위탁 수하물에는 넣을 수 없습니다.",
+            "source": [
+              "kr.sample_authority.0001#3"
+            ]
+          },
+          {
+            "name": "부탄가스",
+            "details": "캠핑용",
+            "carry_on": "불가",
+            "checked_baggage": "불가",
+            "notes": "휴대용 부탄가스는 기내와 위탁 모두 운송이 금지됩니다.",
+            "source": [
+              "kr.sample_authority.0001#3"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "3_범위_밖_질문": [
+    {
+      "id": "s-5",
+      "question": "도쿄 3박 4일 여행 일정 좀 추천해 줘.",
+      "answer": {
+        "items": []
+      }
+    }
+  ]
+}

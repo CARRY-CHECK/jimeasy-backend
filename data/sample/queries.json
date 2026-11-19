@@ -1,0 +1,131 @@
+{
+  "1_기본_질문": [
+    {
+      "id": "s-1",
+      "question": "인천에서 도쿄로 가는 국제선인데 샴푸랑 선크림을 기내에 가져가도 되나요?",
+      "expected_parsed": {
+        "conditions": {
+          "departure": {
+            "place": "인천",
+            "airline": null
+          },
+          "arrival": {
+            "place": "도쿄",
+            "airline": null
+          },
+          "travel_date": null,
+          "baggage_type": "기내"
+        },
+        "items": [
+          {
+            "name": "샴푸",
+            "details": null
+          },
+          {
+            "name": "선크림",
+            "details": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "s-2",
+      "question": "74Wh 보조배터리 2개를 위탁 수하물에 넣어도 되나요?",
+      "expected_parsed": {
+        "conditions": {
+          "departure": {
+            "place": "한국",
+            "airline": null
+          },
+          "arrival": {
+            "place": null,
+            "airline": null
+          },
+          "travel_date": null,
+          "baggage_type": "위탁"
+        },
+        "items": [
+          {
+            "name": "보조배터리",
+            "details": "74Wh 2개"
+          }
+        ]
+      }
+    }
+  ],
+  "2_조건별_질문": [
+    {
+      "id": "s-3",
+      "question": "가위 날 길이가 5cm인데 기내에 들고 타도 돼요?",
+      "expected_parsed": {
+        "conditions": {
+          "departure": {
+            "place": "한국",
+            "airline": null
+          },
+          "arrival": {
+            "place": null,
+            "airline": null
+          },
+          "travel_date": null,
+          "baggage_type": "기내"
+        },
+        "items": [
+          {
+            "name": "가위",
+            "details": "날 길이 5cm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s-4",
+      "question": "한국에서 일본 가는데 라이터랑 캠핑용 부탄가스를 위탁으로 보내도 되나요?",
+      "expected_parsed": {
+        "conditions": {
+          "departure": {
+            "place": "한국",
+            "airline": null
+          },
+          "arrival": {
+            "place": "일본",
+            "airline": null
+          },
+          "travel_date": null,
+          "baggage_type": "위탁"
+        },
+        "items": [
+          {
+            "name": "라이터",
+            "details": null
+          },
+          {
+            "name": "부탄가스",
+            "details": "캠핑용"
+          }
+        ]
+      }
+    }
+  ],
+  "3_범위_밖_질문": [
+    {
+      "id": "s-5",
+      "question": "도쿄 3박 4일 여행 일정 좀 추천해 줘.",
+      "expected_parsed": {
+        "conditions": {
+          "departure": {
+            "place": "한국",
+            "airline": null
+          },
+          "arrival": {
+            "place": "도쿄",
+            "airline": null
+          },
+          "travel_date": null,
+          "baggage_type": null
+        },
+        "items": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+chromadb==1.5.9
+python-dotenv==1.2.4
+truststore==0.10.5
+httpx==0.28.1
+websocket-client==1.9.2
+openai==3.39.0
+langchain-openai==1.7.3
+pydantic==2.14.1
+sentence-transformers==6.2.0
+
+# Optional hybrid retrieval (Kiwi BM25 + existing dense + RRF)
+langchain-classic==1.0.8
+langchain-community==0.4.2
+rank-bm25==0.2.2
+kiwipiepy==0.24.1
+
+# Chat API
+fastapi==0.162.0
+uvicorn==0.54.0
+
+# Offline dataset evaluation
+ranx==0.3.21
+scikit-learn==1.9.1
+nltk==3.10.4
+rouge-score==0.1.2

@@ -1,0 +1,57 @@
+{
+  "query": {
+    "model": "gpt-4o-mini",
+    "timeout": 120,
+    "max_retries": 0,
+    "parameters": {
+      "temperature": 0
+    },
+    "structured_output": {
+      "method": "json_schema",
+      "strict": true
+    }
+  },
+  "answer": {
+    "model": "gpt-4o-mini",
+    "timeout": 120,
+    "max_retries": 0,
+    "parameters": {
+      "temperature": 0
+    },
+    "structured_output": {
+      "method": "json_schema",
+      "strict": true
+    }
+  },
+  "present": {
+    "model": "gpt-4o-mini",
+    "timeout": 60,
+    "max_retries": 0,
+    "parameters": {
+      "temperature": 0
+    },
+    "structured_output": {
+      "method": "json_schema",
+      "strict": true
+    }
+  },
+  "agent": {
+    "model": "gpt-4o-mini",
+    "timeout": 60,
+    "max_retries": 0,
+    "parameters": {"temperature": 0}
+  },
+  "chat": {
+    "engine": "tools",
+    "max_steps": 8,
+    "history_messages": 12
+  },
+  "embedding": {
+    "provider": "sentence_transformer",
+    "model": "BAAI/bge-m3",
+    "parameters": {
+      "device": "cpu",
+      "normalize_embeddings": true
+    }
+  }
+}

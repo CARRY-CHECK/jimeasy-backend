@@ -1,0 +1,23 @@
+[
+  {
+    "id": "complete_then_replace",
+    "turns": [
+      {"message": "대한항공으로 2026년 11월 10일 한국에서 일본으로 갑니다. 100Wh 보조배터리 2개를 기내에 반입할 수 있나요?", "expect": {"items": ["보조배터리"], "clarification": false}},
+      {"message": "그러면 같은 여행 조건으로 빈 텀블러는 되나요?", "expect": {"items": ["텀블러"], "arrival": "일본", "clarification": false}}
+    ]
+  },
+  {
+    "id": "clarify_then_answer",
+    "turns": [
+      {"message": "기내에 보조배터리 2개 반입돼?", "expect": {"clarification": true}},
+      {"message": "대한항공이고 한국에서 일본으로 2026년 11월 10일 출발해요. 보조배터리는 각각 100Wh예요.", "expect": {"items": ["보조배터리"], "clarification": false}},
+      {"message": "아니, 배터리 수량은 2개가 아니라 3개야. 다른 조건은 같아.", "expect": {"items": ["보조배터리"], "details_contains": "3개", "clarification": false}}
+    ]
+  },
+  {
+    "id": "unsupported",
+    "turns": [
+      {"message": "한국에서 캐나다로 가는데 100Wh 보조배터리 2개 기내 반입되나요?", "expect": {"items": ["보조배터리"], "no_evidence": true, "clarification": false}}
+    ]
+  }
+]

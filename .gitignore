@@ -1,0 +1,40 @@
+# 비밀값
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# 데이터: 합성 샘플만 레포에 둔다. 수집 원문·청크·Chroma DB는 커밋하지 않는다.
+/data/*
+!/data/sample/
+
+# 실행 결과 (scripts.ask, run_dataset, 평가 도구의 기본 출력 위치)
+/outputs/
+
+# 비공개 평가셋과 실행 기록을 로컬에 둘 때의 원래 위치
+/tests/ver*_test/
+/tests/results/
+
+# 도구·OS
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.rerank_gpu.lock
+*.done
+*_done.flag

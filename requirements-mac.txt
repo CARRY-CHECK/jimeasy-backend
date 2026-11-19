@@ -1,0 +1,6 @@
+# Native Apple Silicon environment (ARM64 Python 3.12), tested on macOS 14.7.6.
+# Keep Windows/shared dependency pins in requirements.txt unchanged.
+-r requirements.txt
+
+# 2.15.0 failed during MPS execution on macOS 14; 2.7.1 passed BGE-M3 encoding.
+torch==2.7.1
